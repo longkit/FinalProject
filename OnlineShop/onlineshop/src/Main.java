@@ -198,7 +198,7 @@ public class Main {
                                 }
                                 System.out.print("Enter the seller number to approve: ");
                                 int sellerNumber = scanner.nextInt();
-                                scanner.nextLine();  // Consume newline
+                                scanner.nextLine();  
                                 if (sellerNumber >= 0 && sellerNumber < shop.getUsers().size()) {
                                     User u = shop.getUsers().get(sellerNumber);
                                     if (u instanceof Seller) {
