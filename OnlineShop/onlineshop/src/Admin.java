@@ -93,6 +93,6 @@ public class Admin extends User {
                 .filter(Order::isApproved)
                 .mapToDouble(Order::getTotalAmount)
                 .sum();
-        System.out.println("Total Revenue: " + totalRevenue);
+        System.out.println("Total Revenue: " + totalRevenue*0.1);
     }
 }
